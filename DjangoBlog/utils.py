@@ -182,8 +182,7 @@ def send_email(emailto, title, content):
 
 def parse_dict_to_url(dict):
     from urllib.parse import quote
-    url = '&'.join(['{}={}'.format(quote(k, safe='/'), quote(v, safe='/'))
-                    for k, v in dict.items()])
+    url = '&'.join([f"{quote(k, safe='/')}={quote(v, safe='/')}" for k, v in dict.items()])
     return url
 
 

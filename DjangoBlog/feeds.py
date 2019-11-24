@@ -25,8 +25,8 @@ from datetime import datetime
 class DjangoBlogFeed(Feed):
     feed_type = Rss201rev2Feed
 
-    description = '大巧无工,重剑无锋.'
-    title = "且听风吟 大巧无工,重剑无锋. "
+    description = '且随疾风而行.'
+    title = "站在别人的肩膀上，你可以望的更远"
     link = "/feed/"
 
     def author_name(self):

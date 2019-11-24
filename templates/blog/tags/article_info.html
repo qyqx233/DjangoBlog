@@ -8,7 +8,7 @@
             {% if  isindex %}
                 {% if article.article_order > 0 %}
                     <a href="{{ article.get_absolute_url }}"
-                       rel="bookmark">【置顶】{{ article.title }}</a>
+                       rel="bookmark">{{ article.title }}</a>
                 {% else %}
                     <a href="{{ article.get_absolute_url }}"
                        rel="bookmark">{{ article.title }}</a>
@@ -18,23 +18,7 @@
                 {{ article.title }}
             {% endif %}
         </h1>
-        <div class="comments-link">
-            {% if article.comment_status == "o" and open_site_comment %}
-                <a href="{{ article.get_absolute_url }}#comments" class="ds-thread-count" data-thread-key="3815"
-                   rel="nofollow">
-                    <span class="leave-reply">
-                    {% if article.comment and article.comment_set.count %}
-                        {{ article.comment_set.count }}个评论
-                    {% else %}
-                        发表评论
-                    {% endif %}
-                    </span>
-                </a>
-            {% endif %}
-            <div style="float:right">
-                {{ article.views }} views
-            </div>
-        </div><!-- .comments-link -->
+   
         <br/>
         {% if article.type == 'a' %}
             {% if not isindex %}
