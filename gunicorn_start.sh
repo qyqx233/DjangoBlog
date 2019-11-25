@@ -2,12 +2,13 @@
 
 NAME="DjangoBlog"
 DJANGODIR=$DJANGODIR
-GUNICORN_PATH=$GUNICORN_PATH
 USER=ifling # the user to run as
 GROUP=ifling # the group to run as
 NUM_WORKERS=1 # how many worker processes should Gunicorn spawn
 DJANGO_SETTINGS_MODULE=DjangoBlog.settings # which settings file should Django use
 DJANGO_WSGI_MODULE=DjangoBlog.wsgi # WSGI module name
+DJANGODIR=/home/ifling/webapp/DjangoBlog
+GUNICORN_PATH=/usr/local/python3.7/bin/gunicorn
 
 echo "Starting $NAME as `whoami`"
 

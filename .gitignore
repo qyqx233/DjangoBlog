@@ -83,3 +83,4 @@ setenv.sh
 werobot_session.dat
 werobot_session.dir
 test/test_lazy.py
+setenv.bat
